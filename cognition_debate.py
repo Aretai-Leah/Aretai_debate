@@ -6,6 +6,8 @@ import random
 from typing import List, Dict
 
 
+debate_topic = "which is cooler, Sharks or Pirates?"
+
 print(autogen.__version__)
 
 # The default config list in notebook.
@@ -127,4 +129,4 @@ manager = autogen.GroupChatManager(groupchat=group_chat, llm_config=llm_config)
 
 
 # Initiates the chat with A1
-agents_C[0].initiate_chat(manager, message="which is cooler, Sharks or Pirates? NEXT: A1")
+agents_C[0].initiate_chat(manager, message= debate_topic + " " + "NEXT: A1")
